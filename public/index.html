@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./validaciones.js"></script>
     <title>RegistroLYN</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <form method="post" name="frm_registro" action="">
         <h2>Inserte los siguientes datos</h2>  
         <label>Nombre</label>
-        <input type="text" name="nombre" required>
+        <input type="text" name="nombre" id="nombre" required>
         <br>
         <label>Estado</label>
         <select>
@@ -21,11 +22,11 @@
             <option>Estado3</option>
         </select>
         <br>
+        <label>Sexo</label>
         <select>
             <option disabled>Seleccione una opción</option>
             <option>Hombre</option>
             <option>Mujer</option>
-            <option>Noc</option>
         </select>
         <br>
         <label>Enfermedad</label>
@@ -47,6 +48,7 @@
         </select>
         <br>
         <label>Número del responsable</label>
+        <label type="text" name="numrespon" id="numrespon"></label>
         <input type="submit" value="Enviar">
 </body>
 </html>
